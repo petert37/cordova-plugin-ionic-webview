@@ -24,6 +24,9 @@ var WebView = {
   },
   persistServerBasePath: function() {
     exec(null, null, 'IonicWebView', 'persistServerBasePath', []);
+  },
+  allowsBackForwardNavigationGestures: function (enabled) {
+    exec(null, null, 'IonicWebView', 'allowsBackForwardNavigationGestures', [enabled]);
   }
 }
 
